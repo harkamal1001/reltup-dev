@@ -4,7 +4,7 @@
   "dependencies": {},
   "scripts": {
       "start": "node app",
-      "postinstall": "gulp default"
+      "postinstall": "gulp"
     },
   "devDependencies": {
     "estraverse": "~4.1.0",
