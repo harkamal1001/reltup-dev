@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "dependencies": {},
   "scripts": {
-      "start": "node serve",
+      "start": "node app",
       "postinstall": "gulp default"
     },
   "devDependencies": {
