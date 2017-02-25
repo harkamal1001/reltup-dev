@@ -38,7 +38,7 @@
 										<span class="scroll_right">Sign Up</span>
 									</a></div-->
 									<div class="button_single">
-										<button class="login_pop button button--ujarak button--border-medium button--round-s button--text-thick"><img src="assets/images/button_first.png" alt="" ng-click="console.log('login click')"> Login</button>
+										<button class="login_pop button button--ujarak button--border-medium button--round-s button--text-thick"><img src="assets/images/button_first.png" alt="" data-toggle="modal" data-target="#myModal"> Login</button>
 									</div>
 									<div class="button_single blue">
 										<button class="sign_pop button button--ujarak button--border-medium button--round-s button--text-thick"><img src="assets/images/button_secong.png" alt="" ng-click="console.log('signup click')"> Sign up</button>
@@ -213,3 +213,24 @@
 </div>
 
 <!--POP ENDS-->
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
