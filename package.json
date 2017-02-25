@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "dependencies": {},
   "scripts": {
-      "start": "node app",
-      "postinstall": "gulp"
+      "start": "gulp"
+      
     },
   "devDependencies": {
     "estraverse": "~4.1.0",
