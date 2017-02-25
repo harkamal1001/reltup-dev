@@ -1,6 +1,6 @@
 {
   "name": "node-api",
-  "main": "server.js",
+  "start": "server.js",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "~1.9.3",
