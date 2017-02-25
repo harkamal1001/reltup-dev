@@ -38,10 +38,10 @@
 										<span class="scroll_right">Sign Up</span>
 									</a></div-->
 									<div class="button_single">
-										<button class="login_pop button button--ujarak button--border-medium button--round-s button--text-thick" data-toggle="modal" data-target="#myModal"><img src="assets/images/button_first.png" alt="" > Login</button>
+										<button class="login_pop button button--ujarak button--border-medium button--round-s button--text-thick" data-toggle="modal" data-target="#loginModal"><img src="assets/images/button_first.png" alt="" > Login</button>
 									</div>
 									<div class="button_single blue">
-										<button class="sign_pop button button--ujarak button--border-medium button--round-s button--text-thick"><img src="assets/images/button_secong.png" alt="" ng-click="console.log('signup click')"> Sign up</button>
+										<button class="sign_pop button button--ujarak button--border-medium button--round-s button--text-thick" data-toggle="modal" data-target="#regModal"><img src="assets/images/button_secong.png" alt="" ng-click="console.log('signup click')"> Sign up</button>
 									</div>
 								</div>
 							</div>
@@ -217,7 +217,7 @@
 
 
 <!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
+<div id="loginModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
     <!-- Modal content-->
@@ -233,8 +233,8 @@
        </form>
        <div class="signup">
          <ul>
-         <li>SIGNUP </li>
-         <li>Forgot Password</li>
+         <li data-toggle="modal" data-target="#regModal" data-dismiss="modal">SIGNUP </li>
+         <li data-toggle="modal" data-target="#forgetModal" data-dismiss="modal">Forgot Password</li>
          </ul>
        </div>
        </div>
@@ -252,21 +252,51 @@
 
 
 <!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
+<div id="regModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
     <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Modal Header</h4>
-      </div>
-      <div class="modal-body">
-        <p>Some text in the modal.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
+    <div class="modal-content ">
+    <div class=" poup_outer2 ">
+  <img src="assets/images/close.png" alt="" class="close" data-dismiss="modal">
+   <h3>Create An Account</h3>
+    <div class="poup_form">
+       <form action="" method="get">
+       <input name="" type="text" placeholder="@illinois.edu">
+       <input name="" type="text" placeholder="Password">
+       <input name="" type="text" placeholder="Display Name">
+     <input name="" value="Create Account!" type="button" class="account">
+       </form>
+       <p>Already have an account?</p>
+       <a href="#" >Login Here</a>
+    </div>
+       </div>
+     
+    </div>
+
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div id="forgetModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content ">
+    <div class=" poup_outer2 ">
+  <img src="assets/images/close.png" alt="" class="close" data-dismiss="modal">
+   <h3>Reset your Password</h3>
+    <div class="poup_form">
+       <form action="" method="get">
+       <input name="" type="text" placeholder="@illinois.edu">
+     <input name="" value="Reset Password" type="button" class="account">
+       <div class="reset_outer">Or</div>
+        <input name="" value="Login" type="button" class="account login" data-dismiss="modal">
+       </form>
+    </div>
+       </div>
+     
     </div>
 
   </div>
