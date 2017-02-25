@@ -44,7 +44,8 @@ module.exports = function(app, express) {
 	  User.findOne({
 	    username: req.body.username
 	  }).select('name username password').exec(function(err, user) {
-	  	res.user;
+	  	res.json({name: user.name,
+	        	username: user.username});
 	    if (err) throw err;
 
 	    // no user with that username was found
