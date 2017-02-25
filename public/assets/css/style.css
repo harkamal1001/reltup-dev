@@ -621,3 +621,7 @@ section
 	text-transform: uppercase;
 }
 /*two*/
+
+.poup_outer2 {
+    background: #fff url(../images/poup-bg.png) center bottom no-repeat;
+}
