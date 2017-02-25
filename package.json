@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "dependencies": {},
   "scripts": {
-    "main": "gulp serve"
-  },
+      "start": "node serve",
+      "postinstall": "gulp default"
+    },
   "devDependencies": {
     "estraverse": "~4.1.0",
     "gulp": "~3.9.0",
