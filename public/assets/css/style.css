@@ -630,14 +630,13 @@ section
 }
 
 p.help-block {
-    transition: all linear 0.5s;
-    color: #ff9a27;
-    /* margin: -11px; */
-    padding: 0px;
-    line-height: 13px;
-    font-size: 14px;
-    margin-bottom: 12px;
-    text-align: left;
+     transition: all linear 0.5s;
+  background-color: lightblue;
+  height: 100px;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 button[disabled], html input[disabled] {
