@@ -227,8 +227,8 @@
    <h3>login to reltup</h3>
     <div class="poup_form">
        <form action=""  name="form">
-       <input type="text" placeholder="@illinois.edu" ng-model="validUsername" id="validUsername" name="validUsername" ng-pattern="username" required ng-class=" { 'has-error' : form.validUsername.$invalid } ">
-           <p ng-show="form.validUsername.$invalid" class="help-block">Enter a valid email.</p>
+       <input type="text" placeholder="@illinois.edu" ng-model="validUsername" id="validUsername" name="validUsername" ng-pattern="username" required ng-class=" { 'has-error' : form.validUsername.$invalid && !form.validUsername.$pristine } ">
+           <p ng-show="form.validUsername.$invalid && !form.validUsername.$pristine" class="help-block">Enter a valid email.</p>
        <input name="" type="text" placeholder="Password" required>
      <input name="" value="Login" type="button" class="account">
            input valid? = <code>{{form.validUsername.$valid}}</code><br>
