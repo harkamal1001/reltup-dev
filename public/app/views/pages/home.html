@@ -224,12 +224,12 @@
     <div class="modal-content ">
     <div class=" poup_outer2 ">
   <img src="assets/images/close.png" alt="" class="close" data-dismiss="modal">
-   <h3>login to reltup</h3>
+   <h3>Login to Reltup</h3>
     <div class="poup_form">
        <form ng-submit="submitLoginForm()"   name="LoginForm" novalidate>
-       <input type="text" placeholder="@illinois.edu" ng-model="validUsername" id="validUsername" name="validUsername" ng-pattern="username" required ng-class=" { 'has-error' : LoginForm.validUsername.$invalid && !LoginForm.validUsername.$pristine } ">
+       <input type="text" placeholder="@illinois.edu" ng-model="validUsername" id="validUsername" name="validUsername" ng-pattern="username" required ng-class=" { 'has-error' : LoginForm.validUsername.$invalid && !LoginForm.validUsername.$pristine } " autocomplete="off">
            <p ng-show="LoginForm.validUsername.$invalid && !LoginForm.validUsername.$pristine" class="help-block">{{email_err}}</p>
-       <input type="password" placeholder="Password" ng-model="validPassword" id="validPassword" name="validPassword" required ng-class=" { 'has-error' : LoginForm.validPassword.$invalid && !LoginForm.validPassword.$pristine } " ng-minlength="3" ng-maxlength="8">
+       <input type="password" placeholder="Password" ng-model="validPassword" id="validPassword" name="validPassword" required ng-class=" { 'has-error' : LoginForm.validPassword.$invalid && !LoginForm.validPassword.$pristine } " ng-minlength="3" ng-maxlength="20">
            <p ng-show="LoginForm.validPassword.$error.minlength" class="help-block">{{pass_err_length_min}}</p>
             <p ng-show="LoginForm.validPassword.$error.maxlength" class="help-block">{{pass_err_length_max}}</p>
            <p ng-show="LoginForm.validPassword.$invalid && !LoginForm.validPassword.$pristine && !LoginForm.validPassword.$error.minlength && !LoginForm.validPassword.$error.maxlength" class="help-block">{{pass_err}}</p>
