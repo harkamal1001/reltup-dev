@@ -5,7 +5,7 @@ angular.module('mainCtrl', [])
 	vm.message = 'this is my message!';
     
     
-    vm.username = '\\w+@illinois.edu';
+    $scope.username = '\\w+@illinois.edu';
 
     $scope.user = 'Hi user';
 }]);
