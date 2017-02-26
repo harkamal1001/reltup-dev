@@ -5,6 +5,6 @@ angular.module('mainCtrl', [])
 	vm.message = 'this is my message!';
     
     
-    vm.username = '\w+@illinois.edu';
+    vm.username = '\\w+@illinois.edu';
 
 });
