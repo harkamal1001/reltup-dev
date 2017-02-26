@@ -16,4 +16,7 @@ angular.module('mainCtrl', [])
                 alert('our form is amazing');
             }
     };
+    
+    $scope.pass_err = 'password required';
+    $scope.email_err = 'Email must be like user@illinois.edu';
 }]);
