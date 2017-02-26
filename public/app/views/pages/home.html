@@ -232,7 +232,7 @@
        <input type="password" placeholder="Password" ng-model="validPassword" id="validPassword" name="validPassword" required ng-class=" { 'has-error' : LoginForm.validPassword.$invalid && !LoginForm.validPassword.$pristine } " ng-minlength="3" ng-maxlength="8">
            <p ng-show="LoginForm.validPassword.$error.minlength" class="help-block">{{pass_err_length_min}}</p>
             <p ng-show="LoginForm.validPassword.$error.maxlength" class="help-block">{{pass_err_length_max}}</p>
-           <p ng-show="LoginForm.validPassword.$invalid && !LoginForm.validPassword.$pristine && !LoginForm.validPassword.$error.minlength" class="help-block">{{pass_err}}</p>
+           <p ng-show="LoginForm.validPassword.$invalid && !LoginForm.validPassword.$pristine && !LoginForm.validPassword.$error.minlength && !LoginForm.validPassword.$error.maxlength" class="help-block">{{pass_err}}</p>
      <input name="" value="Login" type="button" class="account" ng-disabled="LoginForm.$invalid">
        </form>
        <div class="signup">
