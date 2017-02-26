@@ -622,6 +622,9 @@ section
 }
 /*two*/
 
+
+
+/* ------------WBC096------------------*/ 
 .poup_outer2 {
     background: #fff url(../images/poup-bg.png) center bottom no-repeat;
 }
@@ -634,4 +637,12 @@ p.help-block {
     font-size: 14px;
     margin-bottom: 12px;
     text-align: left;
+}
+
+button[disabled], html input[disabled] {
+    cursor: not-allowed;
+}
+
+.signup li {
+    cursor: pointer;
 }
