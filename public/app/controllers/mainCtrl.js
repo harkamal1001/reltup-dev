@@ -17,6 +17,9 @@ angular.module('mainCtrl', [])
             }
     };
     
+    //validation Error
     $scope.pass_err = 'password required';
+    $scope.pass_err_length_max = 'Password is too long.';
+    $scope.pass_err_length_min = 'Username is too short.';
     $scope.email_err = 'Email must be like user@illinois.edu';
 }]);
