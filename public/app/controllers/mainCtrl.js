@@ -1,6 +1,6 @@
 angular.module('mainCtrl', [])
 
-    .controller('mainController', [ '$scope' ,function($scope) {
+    .controller('mainController', [ '$scope' ,function($scope,$rootScope, $location, Auth) {
 //----------- used variables -----------------------------     
         $scope.LoginForm;
         $scope.validUsername ='';
@@ -17,9 +17,25 @@ angular.module('mainCtrl', [])
 //----------- Login form #starts -----------------------------
         $scope.submitLoginForm = function() {
             
-//----------- check to make sure the form is completely valid
+            //check to make sure the form is completely valid
             if ($scope.LoginForm.$valid) {
-                alert('our form is amazing');
+                $scope.processing = true;
+
+                // clear the error
+                $scope.error = '';
+
+                Auth.login($scope.LoginForm.validPassword, $scope.LoginForm.validPassword)
+                    .success(function(data) {
+                        $scope.processing = false;			
+
+                        // if a user successfully logs in, redirect to users page
+                        if (data.success)			
+                            $location.path('/users');
+                        else 
+                            $scope.error = data.message;
+
+                    });
+     
             }
         }; // Login form #ends
 
