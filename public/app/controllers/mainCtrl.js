@@ -1,6 +1,6 @@
 angular.module('mainCtrl', [])
 
-    .controller('mainController', [ '$scope','$rootScope','$location','Auth',function($scope,$rootScope,$location,Auth) {
+    .controller('mainController', [ '$scope' ,function($scope,$rootScope, $location, Auth) {
 //----------- used variables -----------------------------     
         $scope.LoginForm;
         $scope.validUsername ='';
