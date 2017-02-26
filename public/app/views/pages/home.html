@@ -227,11 +227,11 @@
    <h3>login to reltup</h3>
     <div class="poup_form">
        <form action=""  name="form">
-       <input type="text" placeholder="@illinois.edu" ng-model="validUsername" id="validUsername" name="validUsername" ng-pattern="username">
+       <input type="text" placeholder="@illinois.edu" ng-model="vm.validUsername" id="validUsername" name="validUsername" ng-pattern="vm.username">
        <input name="" type="text" placeholder="Password">
      <input name="" value="Login" type="button" class="account">
-           input valid? = <code>{{$scope.validUsername.$valid}}</code><br>
-    model = <code>{{$scope.validUsername}}</code>
+           input valid? = <code>{{form.validUsername.$valid}}</code><br>
+    model = <code>{{vm.validUsername}}</code>
        </form>
        <div class="signup">
          <ul>
