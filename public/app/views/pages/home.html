@@ -226,11 +226,11 @@
   <img src="assets/images/close.png" alt="" class="close" data-dismiss="modal">
    <h3>login to reltup</h3>
     <div class="poup_form">
-       <form action="" method="get" name="form">
-       <input name="" type="text" placeholder="@illinois.edu" ng-model="vm.username" id="username">
+       <form action=""  name="form">
+       <input type="text" placeholder="@illinois.edu" ng-model="vm.validUsername" id="input" name="input" ng-pattern="vm.username">
        <input name="" type="text" placeholder="Password">
      <input name="" value="Login" type="button" class="account">
-           input valid? = <code>{{form.input.$valid}}</code><br>
+           input valid? = <code>{{vm.validUsername.$valid}}</code><br>
     model = <code>{{model}}</code>
        </form>
        <div class="signup">
