@@ -630,6 +630,7 @@ section
 }
 
 p.help-block {
+    transition: all linear 0.5s;
     color: #ff9a27;
     /* margin: -11px; */
     padding: 0px;
