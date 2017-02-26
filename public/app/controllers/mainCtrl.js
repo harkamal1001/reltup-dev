@@ -8,4 +8,11 @@ angular.module('mainCtrl', [])
     $scope.username = '\\w+@illinois.edu';
 
     $scope.user = 'Hi user';
+    
+    $scope.submitLoginForm = function() {
+            // check to make sure the form is completely valid
+            if ($scope.LoginForm.$valid) {
+                alert('our form is amazing');
+            }
+    };
 }]);
