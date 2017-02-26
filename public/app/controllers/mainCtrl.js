@@ -16,7 +16,10 @@ angular.module('mainCtrl', [])
         
 //----------- Login form #starts -----------------------------
         $scope.submitLoginForm = function() {
-            
+            $scope.processing = true;
+
+            // clear the error
+            $scope.error = '';
             //check to make sure the form is completely valid
             if ($scope.LoginForm.$valid) {
                 $scope.processing = true;
