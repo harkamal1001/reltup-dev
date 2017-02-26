@@ -13,9 +13,9 @@ angular.module('mainCtrl', [])
     
     $scope.submitLoginForm = function() {
             // check to make sure the form is completely valid
-            if ($scope.LoginForm.$valid) {
-                alert('our form is amazing');
-            }
+        if ($scope.LoginForm.$valid) {
+            alert('our form is amazing');
+        }
         else{
             alert('our form is not amazing');
         }
