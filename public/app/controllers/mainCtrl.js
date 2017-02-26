@@ -4,6 +4,7 @@ angular.module('mainCtrl', [])
 	var vm = this;	
 	vm.message = 'this is my message!';
     
+    $scope.LoginForm;
     $scope.validUsername ='';
     $scope.validPassword ='';
     $scope.username = '\\w+@illinois.edu';
