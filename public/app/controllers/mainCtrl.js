@@ -7,7 +7,7 @@ angular.module('mainCtrl', [])
         $scope.validPassword ='';
         $scope.username = '\\w+@illinois.edu';
         $scope.user = 'Hi user';
-        
+        $scope.error;
 //----------- validation Error -----------------------------
         $scope.pass_err = 'Password required';
         $scope.pass_err_length_max = 'Password is too long.';
@@ -22,6 +22,7 @@ angular.module('mainCtrl', [])
             $scope.error = '';
             //check to make sure the form is completely valid
             if ($scope.LoginForm.$valid) {
+                alert("Valid login form");
                 $scope.processing = true;
 
                 // clear the error
